@@ -1,0 +1,11 @@
+setwd()
+quants.sources = list.files(getwd(), pattern = "\\.r$", ignore.case = TRUE)
+print(quants.sources)
+
+source("SPL_RAwMTSD_01_Data_Helpers.R")
+source("SPL_RAwMTSD_02_Plots.R")
+source("SPL_RAwMTSD_03_tSeriesTest_lag1.R")
+source("SPL_RAwMTSD_04_tSeriesTest_multiLag.R")
+source("SPL_RAwMTSD_05_tSeries_lm.R")
+source("SPL_RAwMTSD_06_funct_benchmark.R")
+source("SPL_RAwMTSD_07_Export_tex.R")
